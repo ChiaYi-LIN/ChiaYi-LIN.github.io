@@ -11174,13 +11174,12 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
-    height: 550px;
+    height: 750px;
     z-index: 0;
 }
 
 @media (max-width: 991.98px) {
     .owl-carousel.home-slider .slider-item .slider-text {
-        position: relative;
         text-align: center;
     }
 }
@@ -11188,7 +11187,7 @@ h5,
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
     width: 80%;
     position: relative;
-    height: 500px;
+    height: 650px;
     z-index: -1;
     -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
@@ -11208,7 +11207,6 @@ h5,
 @media (max-width: 991.98px) {
     .owl-carousel.home-slider .slider-item .slider-text .one-third {
         width: 100%;
-        margin: auto;
         z-index: 0;
     }
     .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {

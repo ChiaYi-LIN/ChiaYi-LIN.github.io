@@ -46,7 +46,6 @@
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    overflow: scroll;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11188,7 +11187,7 @@ h5,
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
     width: 80%;
     position: relative;
-    height: 650px;
+    height: 500px;
     z-index: -1;
     -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
@@ -11207,7 +11206,8 @@ h5,
 
 @media (max-width: 991.98px) {
     .owl-carousel.home-slider .slider-item .slider-text .one-third {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         z-index: 0;
     }
     .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {

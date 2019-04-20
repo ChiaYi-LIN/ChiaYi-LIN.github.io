@@ -11231,6 +11231,7 @@ h5,
         right: 0;
         width: 1300px;
         height: 100%;
+        overflow: scroll;
         margin: 0 auto;
     }
 }

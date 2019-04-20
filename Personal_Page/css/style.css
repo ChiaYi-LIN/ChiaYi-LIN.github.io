@@ -11174,12 +11174,13 @@ h5,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text {
-    height: 750px;
+    height: 550px;
     z-index: 0;
 }
 
 @media (max-width: 991.98px) {
     .owl-carousel.home-slider .slider-item .slider-text {
+        position: relative;
         text-align: center;
     }
 }
@@ -11206,7 +11207,7 @@ h5,
 
 @media (max-width: 991.98px) {
     .owl-carousel.home-slider .slider-item .slider-text .one-third {
-        width: 80%;
+        width: 100%;
         margin: auto;
         z-index: 0;
     }

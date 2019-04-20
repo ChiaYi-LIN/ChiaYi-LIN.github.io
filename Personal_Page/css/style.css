@@ -11220,6 +11220,7 @@ h5,
 .owl-carousel.home-slider .slider-item .slider-text .one-forth {
     width: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {

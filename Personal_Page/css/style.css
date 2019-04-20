@@ -11230,6 +11230,7 @@ h5,
         bottom: 0;
         right: 0;
         width: 1300px;
+        height: 100%;
         margin: 0 auto;
     }
 }

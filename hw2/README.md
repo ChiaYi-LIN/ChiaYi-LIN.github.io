@@ -9,16 +9,28 @@
    
   * 按下畫面左上角的 Logo 會刷新頁面
       
-       使用新增功能後，可以按下 Logo 刷新頁面來顯示加入的新商品
+       使用新增功能後，可以按下 Logo 刷新頁面來顯示新加入的新商品
     
 * 分類查詢
     * 點擊 `Search By Category` 可以開啟下拉式表單，並出現預設分類
+    
     * `Mobile`, `Home Automation`, `Power`, `Headphone`, `Accessories` 為預設分類，點擊後會顯示各類別商品
-    * 點擊 `All Products` 會顯示頁面載入成功時從資料庫取得的所有商品
+    
+    * 點擊 `All Products` 會顯示頁面載入成功時從資料庫取得的所有商品，功能與 `Search Products` 相同
     
 * 自訂查詢
     * 在畫面右上角的白色方塊中可以輸入自訂的商品搜尋關鍵字，輸入後按下 `Enter` 或是點擊旁邊的 `Search` 按鈕即可進行搜尋
 
 ## 分頁
+* 指定頁數
+
+* 上一頁、下一頁
 
 ## 新增
+* 新增功能
+
+* 新增條件
+
+```{javaScript}
+var happy
+```

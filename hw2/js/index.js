@@ -99,7 +99,7 @@ $(document).ready(function() {
             $('#add-function').attr('class', ' active')
         }
 
-        $('#product-list').empty();
+        $('#product-list').empty()
         $('#add-product-form').show()
         $('#page').hide()
     })
@@ -117,11 +117,19 @@ $(document).ready(function() {
 
         if (searchItems.length != 0) {
             $('#product-list').empty()
+            $('#add-product-form').hide()
             showItems(1, searchItems)
             newPage(searchItems.length, pageCount, searchItems)
             console.log(searchItems.length)
         }
 
+    })
+
+    $("#search").on('keypress', function(event) {
+        if (event.keyCode == 13) {
+            $("#search-button").click()
+            return false
+        }
     })
 
     var showItems = (page, items) => {

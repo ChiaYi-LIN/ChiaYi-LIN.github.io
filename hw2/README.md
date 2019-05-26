@@ -47,7 +47,7 @@
 * 查詢和新增功能之間的切換
     * 網頁載入時預設顯示查詢頁面，在導覽列上有 `查詢 (Search Products)` 和 `新增 (Add Products)` 兩種模式可以選擇
     
-    * 在查詢模式中，按下 'Add Products' 會進入新增模式，此時導覽列的 `Search By Category` 和 `Search` 會被隱藏，同時頁面會顯示新增表單
+    * 在查詢模式中，按下 `Add Products` 會進入新增模式，此時導覽列的 `Search By Category` 和 `Search` 會被隱藏，同時頁面會顯示新增表單
     
     * 在新增模式中，按下 `Search Products` 會進入查詢模式，此時導覽列的 `Search By Category` 和 `Search` 會重新顯示，同時頁面會顯示一開始網頁載入的所有商品
 

@@ -31,6 +31,6 @@
 
 * 新增條件
 
-```{javaScript}
+```{JavaScript}
 var happy
 ```

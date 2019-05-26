@@ -259,7 +259,7 @@ $(document).ready(function() {
                     $('#dialog').modal('show')
                 }
             } else {
-                $('#message').text('Sever Error')
+                $('#message').text('Server Error')
                 $('#dialog').modal('show')
             }
         })

@@ -3,13 +3,9 @@
 ## 查詢
 * 查詢所有商品
   * 開啟網頁時自動從資料庫載入商品，並顯示第一頁
-    `$('#all-products').on('click', function() {
-        $('#product-list').empty()
-        showItems(1, items)
-        newPage(items.length, pageCount, items)
-        $('#page').show()
-    })`
-  * 按下 Search Products 按鈕會把已經下載過的產品資訊再一次輸出到頁面
+  * 按下 `Search Products` 會把已經下載過的產品資訊再一次輸出到頁面
+   使用分類查詢、自訂查詢、換頁或新增功能後，如果想要回到一開始包含所有商品的頁面，可以按下 `Search Products`來完成
+  *
     
   
 * 分類查詢

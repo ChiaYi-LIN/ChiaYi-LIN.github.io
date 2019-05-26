@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B04704016林家毅_HW2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">La Boutique du Lin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item active" id="search-function">
+                    <a class="nav-link" href="#">Search Products <span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item dropdown" id="search-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search By Category
+                          </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" id="mobile">Mobile</a>
+                        <a class="dropdown-item" href="#" id="home-automation">Home Automation</a>
+                        <a class="dropdown-item" href="#" id="power">Power</a>
+                        <a class="dropdown-item" href="#" id="headphone">Headphone</a>
+                        <a class="dropdown-item" href="#" id="accessories">Accessories</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" id="all-products">All Products</a>
+                    </div>
+                </li>
+
+                <li class="nav-item" id="add-function">
+                    <a class="nav-link" href="#">Add Products</a>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="product-list">
+            <div class="spinner-border text-info" role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+        </div>
+
+        <div class="row" id="page">
+            <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul id="page-number" class="pagination justify-content-center">
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <form id="add-product-form">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Add a product</h1>
+                    <p class="lead">Fill out the form to add a product to the server.</p>
+                </div>
+            </div>
+
+            <div class="form-content">
+                <div class="form-group row">
+                    <label for="product-name" class="col-sm-2 col-form-label font-weight-bold">Product Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="product-name" placeholder="Please Input Product Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="product-price" class="col-sm-2 col-form-label font-weight-bold">Product Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="product-price" placeholder="Please Input Product Price">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="product-count" class="col-sm-2 col-form-label font-weight-bold">Product Count</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="product-count" placeholder="Please Input Product Count">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="product-url" class="col-sm-2 col-form-label font-weight-bold">Product URL</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="product-url" placeholder="Please Input Product Image URL">
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="button" class="btn btn-info" id="add-product-submit">Add to server</button>
+            </div>
+        </form>
+
+        <div id="dialog" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">System Message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="message">Message to render</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="text-center">
+                2019 &copy; Chia-Yi Lin
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

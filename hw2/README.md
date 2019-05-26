@@ -55,6 +55,6 @@
 ### HTML
 ### CSS
 ### JavaScript
-```{JavaScript}
+```javascript
 var happy
 ```

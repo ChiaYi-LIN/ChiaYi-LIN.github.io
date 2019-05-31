@@ -124,6 +124,33 @@ categoryFilter = function(fromItems, key) {
 }
 ```
 
+* 任意輸入關鍵字，可以搜尋產品名稱包含該關鍵字的產品
+```javascript
+$('#search-button').on('click', function() {
+    if ($('#search').val().trim() == '') {
+        var searchKeyWord = $('#search').attr('placeholder')
+    } else {
+        searchKeyWord = $('#search').val()
+    }
+    var searchItems = items.filter(function(item, index, array) {
+        return item.name.toLowerCase().includes(searchKeyWord.toLowerCase())
+    })
+    if (searchItems.length != 0) {
+        $('#product-list').empty()
+        $('#add-product-form').hide()
+        showItems(1, searchItems)
+        newPage(searchItems.length, pageCount, searchItems)
+        console.log(searchItems.length)
+    }
+})
+$("#search").on('keypress', function(event) {
+    if (event.keyCode == 13) {
+        $("#search-button").click()
+        return false
+    }
+})
+```
+
 * 查詢、新增功能切換
 ```javascript
 $('#search-function').on('click', function() {
@@ -156,32 +183,5 @@ $('#add-function').on('click', function() {
     $('#product-list').empty()
     $('#add-product-form').show()
     $('#page').hide()
-})
-```
-
-* 任意輸入關鍵字，可以搜尋產品名稱包含該關鍵字的產品
-```javascript
-$('#search-button').on('click', function() {
-    if ($('#search').val().trim() == '') {
-        var searchKeyWord = $('#search').attr('placeholder')
-    } else {
-        searchKeyWord = $('#search').val()
-    }
-    var searchItems = items.filter(function(item, index, array) {
-        return item.name.toLowerCase().includes(searchKeyWord.toLowerCase())
-    })
-    if (searchItems.length != 0) {
-        $('#product-list').empty()
-        $('#add-product-form').hide()
-        showItems(1, searchItems)
-        newPage(searchItems.length, pageCount, searchItems)
-        console.log(searchItems.length)
-    }
-})
-$("#search").on('keypress', function(event) {
-    if (event.keyCode == 13) {
-        $("#search-button").click()
-        return false
-    }
 })
 ```

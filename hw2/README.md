@@ -125,7 +125,7 @@ categoryFilter = function(fromItems, key) {
 ```
 
 * 查詢、新增功能切換
-```javescript
+```javascript
 $('#search-function').on('click', function() {
     $('#search-dropdown').show()
     $('#search').show()

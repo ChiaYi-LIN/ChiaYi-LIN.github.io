@@ -108,7 +108,7 @@ $('#accessories').on('click', function() {
 ```
 
 * 分類查詢功能函數，會搜尋產品名稱至少包含一個字典內容的產品
-```
+```javascript
 categoryFilter = function(fromItems, key) {
     all_results = []
     for (i = 0; i < key.length; i++) {
@@ -156,5 +156,32 @@ $('#add-function').on('click', function() {
     $('#product-list').empty()
     $('#add-product-form').show()
     $('#page').hide()
+})
+```
+
+* 任意輸入關鍵字，可以搜尋產品名稱包含該關鍵字的產品
+```javascript
+$('#search-button').on('click', function() {
+    if ($('#search').val().trim() == '') {
+        var searchKeyWord = $('#search').attr('placeholder')
+    } else {
+        searchKeyWord = $('#search').val()
+    }
+    var searchItems = items.filter(function(item, index, array) {
+        return item.name.toLowerCase().includes(searchKeyWord.toLowerCase())
+    })
+    if (searchItems.length != 0) {
+        $('#product-list').empty()
+        $('#add-product-form').hide()
+        showItems(1, searchItems)
+        newPage(searchItems.length, pageCount, searchItems)
+        console.log(searchItems.length)
+    }
+})
+$("#search").on('keypress', function(event) {
+    if (event.keyCode == 13) {
+        $("#search-button").click()
+        return false
+    }
 })
 ```

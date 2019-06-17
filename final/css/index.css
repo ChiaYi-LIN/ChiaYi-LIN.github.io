@@ -81,6 +81,17 @@ body {
 
 #add-new-bill {
     float: right;
+    background: rgb(18, 32, 40);
+    border-color: rgb(19, 191, 153);
+    color: rgb(19, 191, 153);
+}
+
+#add-new-bill:hover {
+    background: rgb(43, 55, 59);
+}
+
+#add-new-bill:active {
+    background: rgb(82, 84, 85);
 }
 
 input::-webkit-inner-spin-button,

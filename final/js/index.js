@@ -170,7 +170,7 @@ $(function() {
 
     $('#add-new-bill').keypress(function(e) {
         if (e.which == 13) {
-            $('#add-new-member').click()
+            $('#add-new-bill').click()
         }
     })
 

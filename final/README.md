@@ -108,10 +108,12 @@ $('#add-new-member').keypress(function(e) {
 
 $('#add-new-bill').keypress(function(e) {
     if (e.which == 13) {
-        $('#add-new-member').click()
+        $('#add-new-bill').click()
     }
 })
 ```
+
+* 至少有一個成員時顯示新增帳目欄位
 
 ```javascript
 $('#add-new-member').on('click', function() {
@@ -120,6 +122,8 @@ $('#add-new-member').on('click', function() {
     }
 })
 ```
+
+* 新增帳目的條件設定、刪除帳目功能，並及時更新還錢方式。一旦觸發任何一種功能就會顯示歷史消費欄位和還錢欄位。
 
 ```javascript
 $('#add-new-bill').on('click', function() {
@@ -185,6 +189,8 @@ $('#add-new-bill').on('click', function() {
     calculateTotal()
 })
 ```
+
+* 還錢方式的計算流程並顯示在最右方的欄位
 
 ```javascript
 var calculateTotal = function() {
@@ -254,4 +260,3 @@ var calculateTotal = function() {
     }
 }
 ```
-## 其他

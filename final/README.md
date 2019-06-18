@@ -24,7 +24,7 @@
     
     * `Price`、所有成員`Payment`總和、所有成員`Consumption`總和須彼此相等。
 
-3. 消費歷史
+3. 查看消費歷史
 
    * 每筆新增的消費紀錄都會被儲存在右方的消費歷史欄位。
    
@@ -38,20 +38,15 @@
 
 ### Vue.js
 
+* 群組成員的處理是使用Vue.js完成，當按下`Add`按鈕時會觸發`addNewParticipant()`，將新成員的`id`、`name`新增到物件中，並透過`each-participant`和`new-bill`兩個模板產出html在原本的網頁上。
+
 ```javascript
 var main = new Vue({
     el: '#main',
     data: {
         newParticipant: '',
         participants: [],
-        nextParticipantId: 1,
-        bills: [],
-        billDate: '',
-        billTitle: '',
-        billPrice: 0,
-        billParticipant: [],
-        billPayment: 0,
-        billConsume: 0
+        nextParticipantId: 1
     },
     methods: {
         addNewParticipant() {
@@ -59,9 +54,6 @@ var main = new Vue({
                 this.participants.push({ id: this.nextParticipantId++, name: this.newParticipant })
             }
             this.newParticipant = ''
-        },
-        addNewBill() {
-            
         }
     }
 })
@@ -86,16 +78,20 @@ Vue.component('new-bill', {
     ',
     props: ['participant']
 })
-
 ```
 
 ### JQuery
+
+* 一開始進入網頁時只會顯示第一個欄位，其他欄位會被隱藏，直到顯示條件被觸發。
+
 ```javascript
 $('#activity').hide()
 $('#all-history').hide()
 $('#result').hide()
 
 ```
+
+* `Input`物件在輸入完成時按下`Enter`會產生跟點擊按鈕一樣的效果
 
 ```javascript
  $('#add-one').keypress(function(e) {

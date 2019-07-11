@@ -34,9 +34,9 @@
             </div>
         </nav>
     </div>
-    <div class="main" id="main">
+    <div class="main container-fluid" id="main">
         <div class="row h-100">
-            <div class="col-lg-2 h-100 px-0 pt-4 mx-3 ml-4" id="member">
+            <div class="col-11 col-sm-2 h-100 px-0 pt-4 ml-4 mb-3" id="member">
                 <div id="member-list">
                     <ul class="list-group">
                         <li class="list-group-item each-member">Group Members</li>
@@ -46,38 +46,38 @@
                 <div id="add-member">
                     <div class="row w-100 h-100 m-0 px-3">
                         <form v-on:submit.prevent="addNewParticipant" class="my-auto">
-                            <input type="text" id="add-one" class="form-control col-lg-7 mr-3" v-model="newParticipant">
-                            <button class="btn btn-light btn-sm w-25 col-lg-4 col-offset-1" id="add-new-member">Add</button>
+                            <input type="text" id="add-one" class="form-control col-7 mr-3" v-model="newParticipant">
+                            <button class="btn btn-light btn-sm w-25 col-4 col-offset-1" id="add-new-member">Add</button>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 h-100 mx-2" id="activity">
+            <div class="col-11 col-sm-3 h-100 ml-4 mb-3" id="activity">
                 <form class="form-group pt-3" v-on:submit.prevent="addNewBill">
                     <div class="row pl-1 pr-3 py-2">
-                        <label for="new-event-date" class="col-lg-3 my-auto">Date</label>
-                        <input class="form-control col-lg-9 w-50 activity-info" id="new-event-date" placeholder="Date" type="date" v-model="billDate">
+                        <label for="new-event-date" class="col-3 my-auto">Date</label>
+                        <input class="form-control col-9 w-50 activity-info" id="new-event-date" placeholder="Date" type="date" v-model="billDate">
                     </div>
 
 
                     <div class="row pl-1 pr-3 py-1">
-                        <label class="col-lg-3 my-auto" for="new-event-title">Title</label>
-                        <input class="form-control col-lg-9 activity-info" id="new-event-title" placeholder="Title" v-model="billTitle">
+                        <label class="col-3 my-auto" for="new-event-title">Title</label>
+                        <input class="form-control col-9 activity-info" id="new-event-title" placeholder="Title" v-model="billTitle">
                     </div>
 
 
                     <div class="row pl-1 pr-3 py-1">
-                        <label class="col-lg-3 my-auto" for="new-event-price">Price</label>
-                        <input class="form-control col-lg-9 activity-info" id="new-event-price" placeholder="Price" type="number" v-model="billPrice">
+                        <label class="col-3 my-auto" for="new-event-price">Price</label>
+                        <input class="form-control col-9 activity-info" id="new-event-price" placeholder="Price" type="number" v-model="billPrice">
                     </div>
 
                     <table class="w-100" id="input-table">
                         <thead>
                             <tr class="row m-0 py-3">
-                                <th scope="col" class="col-lg-4 p-0">Member</th>
-                                <th scope="col" class="col-lg-4 p-0">Payment</th>
-                                <th scope="col" class="col-lg-4 p-0">Consumption</th>
+                                <th scope="col" class="col-4 p-0">Member</th>
+                                <th scope="col" class="col-4 p-0">Payment</th>
+                                <th scope="col" class="col-4 p-0">Consumption</th>
                             </tr>
                         </thead>
                         <tbody class="row pb-3">
@@ -92,11 +92,11 @@
                 </form>
             </div>
 
-            <div class="col-lg-3 h-100 px-3 mx-3" id="all-history">
+            <div class="col-11 col-sm-3 h-100 px-3 ml-4 mb-3" id="all-history">
                 <p is="history" v-for="(bill, index) in bills" v-bind:bill="bill" v-on:remove="bills.splice(index, 1)"></p>
             </div>
 
-            <div class="col-lg-3 h-100 mx-2 py-4" id="result">
+            <div class="col-11 col-sm-3 h-100 ml-4 py-4 mb-3" id="result">
 
             </div>
 

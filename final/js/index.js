@@ -21,9 +21,9 @@ Vue.component('each-participant', {
 Vue.component('new-bill', {
     template: '\
     <tr class="row m-0">\
-    <th scope="col" class="col-lg-4 member my-auto">{{ participant.name }}</th>\
-    <th scope="col" class="col-lg-4 pl-0"><input type="number" class="payment form-control m-0 activity-info" v-model="participant.billPayment"></th>\
-    <th scope="col" class="col-lg-4 pl-0"><input type="number" class="consume form-control m-0 activity-info" v-model="participant.billConsume"></th>\
+    <th scope="col" class="col-4 member my-auto">{{ participant.name }}</th>\
+    <th scope="col" class="col-4 pl-0"><input type="number" class="payment form-control m-0 activity-info" v-model="participant.billPayment"></th>\
+    <th scope="col" class="col-4 pl-0"><input type="number" class="consume form-control m-0 activity-info" v-model="participant.billConsume"></th>\
     </tr>\
     ',
     props: ['participant']

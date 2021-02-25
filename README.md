@@ -1,4 +1,4 @@
-# Welcome to <a href="https://chiayi-lin.github.io/" target="_blank">Chia-Yi Lin's homepage</a>
+# Welcome to [Chia-Yi Lin's homepage](https://chiayi-lin.github.io/)
 
 Feel free to walk around!
 

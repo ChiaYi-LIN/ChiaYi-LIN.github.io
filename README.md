@@ -1,10 +1,10 @@
-# Welcome to [Chia-Yi Lin's homepage](https://chiayi-lin.github.io/)
+# Welcome to <a href="https://chiayi-lin.github.io/" target="_blank">Chia-Yi Lin's homepage</a>
 
 Feel free to walk around!
 
 
 
-<a href="http://example.com/" target="_blank">Hello, world!</a>
+
 
 
 

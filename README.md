@@ -1,4 +1,4 @@
-# Welcome to Chia-Yi Lin's homepage
+# Welcome to [Chia-Yi Lin's homepage](https://chiayi-lin.github.io/)
 
 Feel free to walk around!
 

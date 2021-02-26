@@ -2,6 +2,8 @@
 
 Check Demo [Here](https://chiayi-lin.github.io/final/)
 
+![demo](https://github.com/ChiaYi-LIN/ChiaYi-LIN.github.io/blob/master/final/demo.PNG)
+
 ## 簡介
 
 當一群朋友一起出遊，多少會遇到互相借錢、代為支付的情況，在次數少的情況下大家還可以靠著記憶將帳務理清，但是如果有太多筆複雜的支出，到最後都會很難算出彼此欠錢金額和還錢方式，因此，這個網站的出現就是為了設計一款讓帳務不再錯亂的拆帳軟體。

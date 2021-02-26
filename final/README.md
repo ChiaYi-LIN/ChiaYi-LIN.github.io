@@ -1,6 +1,6 @@
 # JustSplit: The Go Dutch App
 
-## Check Demo [Here](https://chiayi-lin.github.io/final/)
+## Check Demo [Here](https://chiayi-lin.github.io/final/)!
 
 ![demo](https://github.com/ChiaYi-LIN/ChiaYi-LIN.github.io/blob/master/final/demo.PNG)
 

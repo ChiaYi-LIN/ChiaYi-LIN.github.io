@@ -109,68 +109,40 @@
                         <div class="col-md-12 heading-section ftco-animate">
                             <!-- <span class="subheading">Welcome</span> -->
                             <h2 class="mb-4" style="color: #0075f6; font-size: 34px; text-transform: capitalize;">About Me</h2>
-                            <!-- <p>My name is Chia-Yi Lin. I graduated from National Taiwan University, and I major in International Business. I have studied at EMLYON Business School in France as an exchange student for one semester.</p> -->
+                            <!-- Summary -->
+                            <p>AI/ML Engineer with a Best Paper Award (3rd Place, APSIPA ASC 2023) and 2+ years of production experience at Perfect Corp developing 3D facial reconstruction models and generative AI smile synthesis pipelines. Owns the end-to-end model development process: synthetic data engineering, model training, custom loss design, inference pipeline deployment, and mobile integration. Domain expertise spans 3D face reconstruction, diffusion-based image generation, head pose estimation, and face alignment.</p>
+                            <!-- Experience -->
+                            <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">Experience</h2>
+                            <p style="font-weight: bold;" class="mb-0">Perfect Corp · AI / ML Engineer — Computer Vision & Generative AI (12.2023 – Present)</p>
+                            <ul class="mb-0">
+                                <li>Designed and trained 3D face mesh model from scratch with a 13,500-sample synthetic data pipeline and 4 custom loss functions, achieving 8.77% NME on real-world multiview data at 200ms full inference on RTX 4090.</li>
+                                <li>Optimized AI smile generation inference from 40s to ~6s on H200 (&gt;6× speedup) by integrating Lightning LoRA for 4-step generation with a custom Smile LoRA.</li>
+                                <li>Reduced large-yaw head pose error 72% (1.60 → 0.44) via 400K+ synthetic samples at ±60° yaw; deployed to AI engine with no performance side effects.</li>
+                                <li>Improved face alignment NME by 10% (3.46 → 3.11) via local refinement model with per-keypoint correction deltas, retaining 75%+ of original FPS.</li>
+                                <li>Ported DSP-based smile warp to live and video mode on iOS and Android end-to-end, including JNI bridging to C++ engine and suppression curve smoothing for continuous smile during head rotation.</li>
+                            </ul>
+                            <p style="font-weight: bold;" class="mb-0">L’Oréal Taiwan · Management Trainee, Data & CRM (02.2020 – 05.2020)</p>
+                            <ul class="mb-0">
+                                <li>Automated CRM data pipeline via SQL, eliminating 1M NTD/year in agency query fees; automated customer retention triggers saving 5+ hours/week.</li>
+                            </ul>
                             <!-- Education -->
                             <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">Education</h2>
-                            <p style="font-weight: bold;" class="mb-0">Graduate student in Computer Science & Information Engineering, National Taiwan University (09.2021 – present)</p>
+                            <p style="font-weight: bold;" class="mb-0">M.S. Computer Science & Information Engineering, National Taiwan University (09.2021 – 08.2023)</p>
                             <ul class="mb-0">
-                                <li>GPA: 4.11/4.30  (for 1 semester)</li>
-                                <li>Relevant coursework: Machine Learning, Applied Deep Learning, Algorithm Design and Analysis</li>
-                                <li>Research interest: Video Super-Resolution, Image Forensics</li>
+                                <li>GPA: 4.18 / 4.30 · Advisor: Prof. Ja-Ling Wu</li>
+                                <li>Thesis: "Enhancing Real-Time Semantic Segmentation with Textual Knowledge of Pre-Trained Vision-Language Model" — Best Paper Award (3rd Place), APSIPA ASC 2023</li>
                             </ul>
-                            <p style="font-weight: bold;" class="mb-0">Bachelor in International Business, National Taiwan University (09.2015 – 06.2019)</p>
+                            <p style="font-weight: bold;" class="mb-0">B.S. International Business, National Taiwan University (09.2015 – 06.2019)</p>
                             <ul class="mb-0">
-                                <li>GPA: 3.95/4.30 (for 7 semesters)</li>
-                                <li>Relevant coursework: Computer Programming, Data Science Programming, Front-end Programming</li>
-                                <li>One-semester exchange program (EMLYON Business School in Saint-Etienne, France from 09.2018 to 01.2019)</li>
+                                <li>GPA: 3.95 / 4.30 · TOEFL 100 · TOEIC 885</li>
+                                <li>One-semester exchange program (EMLYON Business School in Saint-Étienne, France, 09.2018 – 01.2019)</li>
                             </ul>
-                            <!-- In-Class Projects -->
-                            <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">In-Class Projects</h2>
-                            <p style="font-weight: bold;" class="mb-0">2D computer game developed in C++ based on SDL library (Computer Programming)</p>
-                            <ul class="mb-0">
-                                <li>Utilized object-oriented programming to implement the 2D shooting game.</li>
-                                <li>Video demo: <a target="_blank" href="https://youtu.be/NpuBpuayfdk">youtu.be/NpuBpuayfdk</a></li>
-                            </ul>
-                            <p style="font-weight: bold;" class="mb-0">Classification model built with Python based on scikit-learn and XGBoost packages (Machine Learning)</p>
-                            <ul class="mb-0">
-                                <li>Employed features transformed logistic regression, Gaussian SVM and XGBoost for multi-class classification, and ensembled models of different parameters for better performance.</li>
-                                <li>Kaggle private set rank: 10/127</li>
-                            </ul>
-                            <p style="font-weight: bold;" class="mb-0">Bill splitting web application developed in JavaScript based on jQuery library (Front-end Programming)</p>
-                            <ul class="mb-0">
-                                <li>Designed algorithms simplifying bill splitting procedure and UI/UX easy for usage.</li>
-                                <li>Demo: <a target="_blank" href="https://chiayi-lin.github.io/JustSplit">chiayi-lin.github.io/JustSplit</a></li>
-                            </ul>
-                            <!-- Experience -->
-                            <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">Experiences</h2>
-                            <p style="font-weight: bold;" class="mb-0">L’Oreal Taiwan // Management Trainee, Data & CRM Department (02.2020 – 05.2020)</p>
-                            <ul class="mb-0">
-                                <li>Initiated automatic mechanisms to optimize customer journeys, saving more than 5 working hours per week of routine manual process.</li>
-                                <li>Built new features of chatbot for La Roche-Posay to enhance personalized skin diagnostics.</li>
-                                <li>Wrote SQL scripts to synthesize CRM data and produced visualized reports, reducing the costs of 1 million NTD which would originally be paid to outsourced agencies every year.</li>
-                            </ul>
-                            <p style="font-weight: bold;" class="mb-0">Cobinhood // Product Intern, Product Department (03.2019 – 05.2019)</p>
-                            <ul class="mb-0">
-                                <li>Implemented Bitcoin trading strategies to generate predictive signals based on technical analysis with Python in Cobinhood, the first feeless cryptocurrency exchange platform in the world.</li>
-                                <li>Applied grid search to optimize parameters and back-testing for evaluation.</li>
-                            </ul>
-                            <p style="font-weight: bold;" class="mb-0">NXP Semiconductors // Data Intern,  Marketing Department (03.2018 – 08.2018)</p>
-                            <ul class="mb-0">
-                                <li>Developed user friendly GUI and accomplished 6 Excel VBA projects to automate operations.</li>
-                                <li>Executed web scraping with BeautifulSoup and Selenium packages in Python to retrieve data for the team.</li>
-                            </ul>
-                            <!-- Professional Skills -->
+<!-- Professional Skills -->
                             <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">Skills</h2>
-                            <p class="mb-0"><strong>Languages</strong> –  C++, Python, JavaScript, SQL, LaTex</p>
-                            <p class="mb-0"><strong>Tools</strong> – <strong>C++:</strong> STL, <strong>Python:</strong> PyTorch, scikit-learn, XGBoost</p>
-                            <p class="mb-0"><strong>Services</strong> – Docker, Git</p>
-                            <!-- Languages -->
-                            <h2 class="mt-2 mb-0" style="color: #0075f6; font-size: 20px; text-transform: capitalize;">Languages</h2>
-                            <p class="mb-0">Native Chinese, advanced English, fundamental French</p>
-                            <ul class="mb-0">
-                                <li>TOEFL iBT Test: 100 / 120 (Listening 27, Reading 24, Writing 27, Speaking 22)</li>
-                                <li>TOEIC Test: 880 / 990 (Listening 445, Reading 435)</li>
-                            </ul>
+                            <p class="mb-0"><strong>Languages</strong> – Python · C/C++ · Objective-C · Java · JavaScript · SQL</p>
+                            <p class="mb-0"><strong>Deep Learning</strong> – PyTorch · ComfyUI · LoRA · Diffusion Models · CLIP · MMSegmentation · NeRF · GAN</p>
+                            <p class="mb-0"><strong>CV & Geometry</strong> – 3D Face Reconstruction · Head Pose Estimation · Face Alignment · Semantic Segmentation</p>
+                            <p class="mb-0"><strong>Infrastructure</strong> – Linux · Git · Docker · Conda</p>
 
 
                             <!-- <p class="mb-0">Business strategy</p>
@@ -427,7 +399,7 @@
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <!-- <span class="subheading">Accomplishments</span> -->
                     <h2 class="mb-4">Projects</h2>
-                    <p>Projects of C++, Python and JavaScript were achieved.</p>
+                    <p>Selected projects in C++, Python, and JavaScript.</p>
                 </div>
             </div>
             <div class="row d-flex">
